@@ -30,7 +30,7 @@ function scan () {
 
             // It's important to note that the cursor and returned keys
             // vary independently. The scan is never complete until redis
-            // returns a non-zero cursor. However, with MATCH and large
+            // returns a zero cursor. However, with MATCH and large
             // collections, most iterations will return an empty keys array.
 
             // Still, a cursor of zero DOES NOT mean that there are no keys.
